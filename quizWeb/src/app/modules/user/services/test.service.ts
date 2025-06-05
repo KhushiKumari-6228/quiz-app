@@ -25,5 +25,6 @@ export class TestService {
   getMyTestResults(): Observable<any> {
       return this.http.get(BASIC_URL + `api/test/test-result/${UserStorageService.getUserId()}`);
     }
+  
 
 }

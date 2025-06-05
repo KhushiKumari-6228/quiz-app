@@ -42,4 +42,5 @@ export class DashboardComponent {
     const seconds = time % 60;
     return `${minutes} minutes  ${seconds} seconds`;
   }
+  
 }

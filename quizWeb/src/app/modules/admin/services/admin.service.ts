@@ -8,6 +8,7 @@ const BASIC_URL="http://localhost:8080/";
   providedIn: 'root'
 })
 export class AdminService {
+  deleteTest: any;
 
   constructor(private http: HttpClient) { }
 
