@@ -1,0 +1,34 @@
+<div class="bg">
+    <div class="parent">
+        <div class="child">
+            
+            <form nz-form [formGroup]="testForm" class="login-form" (ngSubmit)="submitForm()" >
+                <nz-form-label [nzNoColon]="'true'">Title</nz-form-label>
+                <nz-form-item>
+                    <nz-form-control nzErrorTip="Please enter the test name!">
+                        <input type="text" nz-input formControlName="title" placeholder="Test Name"/>
+                    </nz-form-control>
+                </nz-form-item>
+
+                <nz-form-label [nzNoColon]="'true'">Time Per Question</nz-form-label>
+                <nz-form-item>
+                    <nz-form-control nzErrorTip="Please enter the time per question!">
+                        <input type="number" nz-input formControlName="time" placeholder="Time Per Question (in seconds)"/>
+                    </nz-form-control>
+                </nz-form-item>
+
+                <nz-form-label [nzNoColon]="'true'">Description</nz-form-label>
+                <nz-form-item>
+                    <nz-form-control nzErrorTip="Please enter the test description!">
+                        <textarea rows="4" nz-input formControlName="description" placeholder="Test Description"></textarea>
+                    </nz-form-control>
+                </nz-form-item>
+
+                <div style="padding-bottom: 30px;">
+                    <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Create Test</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>  
+
